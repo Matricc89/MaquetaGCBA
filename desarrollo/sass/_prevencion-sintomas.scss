@@ -1,0 +1,23 @@
+.prevencion-sintomas{
+    margin-top: 64px;
+    .btn{
+        text-decoration: none;
+    }
+    .listados{
+        margin: 0;
+        padding: 3rem 0 0 0;
+        list-style: none;
+        li{
+            margin-bottom: 2rem;
+            .icono{
+                max-width: 57px;
+                width: 100%;
+                margin-right: 16px;
+            }
+            h3{
+                font-size: 1.1rem;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

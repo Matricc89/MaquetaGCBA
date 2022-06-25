@@ -1,0 +1,297 @@
+body {
+  background-color: #FFF;
+}
+
+.top {
+  color: #38485C;
+  background-color: #F3F6F9;
+  padding-bottom: 0;
+}
+.top .top-fecha {
+  font-size: 0.8rem;
+}
+.top .top-descripcion {
+  font-size: 1.1rem;
+}
+.top .tarjetas {
+  position: relative;
+  z-index: 2;
+}
+.top .tarjetas::after {
+  position: absolute;
+  content: "";
+  display: block;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  z-index: -1;
+  background-color: #FFF;
+}
+.top .tarjetas .tarjeta {
+  background-color: #FFF;
+  box-shadow: 0px 1px 3px rgba(56, 72, 92, 0.2);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  position: relative;
+  border-left: 8px solid #FFDB2E;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.main {
+  padding-top: 125px;
+}
+
+@media screen and (max-width: 767px) {
+  .main {
+    padding-top: 60px;
+  }
+  .top .tarjetas .tarjeta {
+    margin-top: 1.8rem;
+  }
+  .top .tarjetas::after {
+    content: none;
+  }
+  .top .tarjetas .col-12:last-child::after {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 46%;
+    z-index: -1;
+    background-color: #fff;
+  }
+}
+.site-header {
+  background-color: #FFF;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  padding: 1.8rem 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+
+@media screen and (max-width: 767px) {
+  .site-header {
+    padding: 1rem 0;
+  }
+}
+.site-footer {
+  border-top: 3px solid #FCDA59;
+  background-color: #38485C;
+  padding: 3rem 0;
+  color: #FFF;
+}
+.site-footer h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.site-footer a {
+  color: #FFF;
+  font-size: 0.8rem;
+}
+.site-footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.site-footer ul li {
+  width: 15%;
+}
+.site-footer ul li a {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.site-footer ul li p {
+  font-size: 0.8rem;
+  color: #AAAAAA;
+}
+.site-footer .links-interes li {
+  width: auto;
+}
+.site-footer .links-interes li a {
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+.site-footer .division {
+  border-top: 1px solid #FFF;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+.site-footer .ciudad-ba {
+  font-size: 0.7rem;
+}
+.site-footer .ciudad-ba a {
+  display: block;
+  width: 65%;
+  margin-bottom: 0.8rem;
+}
+
+@media screen and (max-width: 767px) {
+  .site-footer .logo-ba a {
+    display: block;
+    width: 65%;
+    margin-bottom: 1.2rem;
+  }
+  .site-footer ul li {
+    display: flex;
+    width: 100%;
+  }
+  .site-footer ul li a, .site-footer ul li p {
+    font-size: 0.9rem;
+    color: #FFF;
+  }
+  .site-footer ul li p {
+    padding-left: 15px;
+  }
+  .site-footer .links-interes li {
+    margin-bottom: 1rem;
+  }
+  .site-footer .logo-redes {
+    display: block;
+    width: 10%;
+    margin-top: 1rem;
+  }
+}
+.form-container {
+  margin-top: 4rem;
+}
+
+.form-recuadro {
+  background-color: #CFFBE2;
+  background-image: url(../images/phone-img.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto 90%;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+}
+.form-recuadro p {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .form-container {
+    background-color: #CFFBE2;
+  }
+  .form-recuadro {
+    padding: 2rem 0rem;
+    background-size: auto;
+    padding-bottom: 300px;
+    background-position: center 140%;
+  }
+}
+.servicios {
+  margin-top: 64px;
+}
+.servicios .icono {
+  background-color: #F5F9FC;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.servicios h3 {
+  font-size: 1.2rem;
+}
+.servicios h3 a {
+  text-decoration: none;
+}
+
+.propuestas {
+  margin-top: 64px;
+}
+.propuestas .card-body {
+  background-color: #F3F6F9;
+}
+
+.informacion {
+  margin-top: 64px;
+  background-color: #F3F6F9;
+  padding: 2rem 0;
+}
+.informacion p {
+  font-size: 1.2rem;
+}
+.informacion .btn-secondary {
+  margin-left: 16px;
+}
+.informacion .btn {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .informacion {
+    margin-top: 60px;
+  }
+  .informacion .btn-secondary {
+    margin-top: 1rem;
+    margin-left: 0;
+  }
+}
+.prevencion-sintomas {
+  margin-top: 64px;
+}
+.prevencion-sintomas .btn {
+  text-decoration: none;
+}
+.prevencion-sintomas .listados {
+  margin: 0;
+  padding: 3rem 0 0 0;
+  list-style: none;
+}
+.prevencion-sintomas .listados li {
+  margin-bottom: 2rem;
+}
+.prevencion-sintomas .listados li .icono {
+  max-width: 57px;
+  width: 100%;
+  margin-right: 16px;
+}
+.prevencion-sintomas .listados li h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+.gobierno-nacional {
+  margin-top: 64px;
+  background-color: #F3F6F9;
+  padding: 2rem 0;
+}
+.gobierno-nacional h2 {
+  font-size: 1rem;
+  color: #38485C;
+  font-family: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.gobierno-nacional ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.gobierno-nacional ul li a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  .gobierno-nacional h2 {
+    font-size: 0.9rem;
+  }
+  .gobierno-nacional ul li {
+    margin-bottom: 1rem;
+  }
+  .gobierno-nacional ul li a {
+    font-size: 0.9rem;
+  }
+}

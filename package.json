@@ -1,0 +1,23 @@
+{
+  "name": "gcba",
+  "version": "1.0.0",
+  "description": "Maqueta GCBA - Muestra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matias",
+  "license": "MIT",
+  "devDependencies": {
+    "dart-sass": "^1.25.0",
+    "grunt": "^1.5.2",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-contrib-uglify": "^5.2.1",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-dart-sass": "^2.0.1",
+    "sass": "^1.51.0"
+  },
+  "dependencies": {
+    "@gcba/obelisco": "^1.33.1"
+  }
+}

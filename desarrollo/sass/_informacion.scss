@@ -1,0 +1,24 @@
+.informacion{
+    margin-top: 64px;
+    background-color: #F3F6F9;
+    padding: 2rem 0;
+    p{
+        font-size: 1.2rem;
+    }
+    .btn-secondary{
+        margin-left: 16px;
+    }
+    .btn{
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: $screen-inter) {
+    .informacion{
+        margin-top: 60px;
+        .btn-secondary{
+            margin-top: 1rem;
+            margin-left: 0;
+        }
+    }
+}

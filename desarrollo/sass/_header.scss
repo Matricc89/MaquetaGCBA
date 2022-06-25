@@ -1,0 +1,16 @@
+.site-header{
+    background-color: #FFF;
+    box-shadow: 0px 3px 6px #00000029;
+    padding: 1.8rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+@media screen and (max-width: $screen-inter) {
+
+    .site-header{
+        padding: 1rem 0;
+    }
+
+}

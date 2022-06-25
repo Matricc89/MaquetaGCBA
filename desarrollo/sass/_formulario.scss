@@ -1,0 +1,28 @@
+
+.form-container{
+    margin-top: 4rem;
+}
+.form-recuadro{
+    background-color: #CFFBE2;
+    background-image: url(../images/phone-img.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 90%;
+    padding: 3rem 2rem;
+    border-radius: 1rem;
+    p{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: $screen-inter) {
+    .form-container{
+        background-color: #CFFBE2;
+    }
+    .form-recuadro{
+        padding: 2rem 0rem;
+        background-size: auto;
+        padding-bottom: 300px;
+        background-position: center 140%;
+    }
+}

@@ -1,0 +1,94 @@
+.site-footer{
+    border-top: 3px solid #FCDA59;
+    background-color: #38485C;
+    padding: 3rem 0;
+    color: #FFF;
+    h2{
+        font-size: 1rem;
+        font-weight: 600;
+        font-family: "Open Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"
+    }
+    a{
+        color: #FFF;
+        font-size: 0.8rem;
+    }
+
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        li{
+            width: 15%;
+            a{
+                font-size: 1.2rem;
+                font-weight: 700;
+            }
+            p{
+                font-size: 0.8rem;
+                color: #AAAAAA;
+            }
+        }
+    }
+
+    .links-interes{
+        li{
+            width: auto;
+            a{
+                font-size: 0.8rem;
+                font-weight: 400;
+            }
+        }
+    }
+
+    .division{
+        border-top: 1px solid #FFF;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .ciudad-ba{
+        a{
+            display: block;
+            width: 65%;
+            margin-bottom: 0.8rem;
+        }
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (max-width: $screen-inter) {
+    .site-footer{
+        .logo-ba{
+            a{
+                display: block;
+                width: 65%;
+                margin-bottom: 1.2rem;
+            }
+        }
+        ul{
+           li{
+               display: flex;
+               width: 100%;
+               a, p{
+                  font-size: 0.9rem; 
+                  color: #FFF;
+               }
+               p{
+                   padding-left: 15px;
+               }
+           }
+        }
+        .links-interes{
+            li{
+                margin-bottom: 1rem;
+            }
+        }
+        .logo-redes{
+            display: block;
+            width: 10%;
+            margin-top: 1rem;
+            
+        }
+    }
+}

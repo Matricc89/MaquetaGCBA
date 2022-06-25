@@ -1,0 +1,92 @@
+
+$screen-inter: 767px;
+
+body{
+    background-color: #FFF;
+}
+
+
+
+
+.top{
+    color: #38485C;
+    background-color: #F3F6F9;
+    padding-bottom: 0;
+    .top-fecha{
+        font-size: 0.8rem;
+    }
+    .top-descripcion{
+        font-size: 1.1rem;
+    }
+
+    .tarjetas{
+        position: relative;
+        z-index: 2;
+        &::after{
+            position: absolute;
+            content: "";
+            display: block;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            z-index: -1;
+            background-color: #FFF;
+        }
+        .tarjeta{
+            background-color: #FFF;
+            box-shadow: 0px 1px 3px #38485C33;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            position: relative;
+            border-left: 8px solid #FFDB2E;
+        }
+    }
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+}
+.main{
+    padding-top: 125px
+}
+
+@media screen and (max-width: $screen-inter) {
+    .main{
+        padding-top: 60px
+    }
+    .top{
+        .tarjetas{
+            .tarjeta{
+                margin-top: 1.8rem
+            }
+            &::after{
+                content: none
+            }
+
+            .col-12:last-child{
+                &::after{
+                    position: absolute;
+                    content: "";
+                    display: block;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 46%;
+                    z-index: -1;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+}
+
+@import "header";
+@import "footer";
+@import "formulario";
+@import "servicios";
+@import "propuestas";
+@import "informacion";
+@import "prevencion-sintomas";
+@import "gobierno-nacional";
